@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
 @CrossOrigin
 public class BooksController {
   @GetMapping("")
+  @CrossOrigin(origins = "https://books-ui-korkux.herokuapp.com")
   public BookDto[] getBooks() {
 
     return new BookDto[] {
