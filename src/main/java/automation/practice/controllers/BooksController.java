@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController()
 @RequestMapping("books")
-@CrossOrigin
+@CrossOrigin(origins = "https://books-ui-korkux.herokuapp.com")
 public class BooksController {
   @GetMapping("")
   @CrossOrigin(origins = "https://books-ui-korkux.herokuapp.com")
