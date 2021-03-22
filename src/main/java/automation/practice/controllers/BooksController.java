@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.*;
 
 @RestController()
 @RequestMapping("books")
-@CrossOrigin(origins = "https://books-ui-korkux.herokuapp.com")
+@CrossOrigin
 public class BooksController {
   private HashMap<String, Book> books;
 
